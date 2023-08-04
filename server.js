@@ -4,7 +4,7 @@ const app = require('./app');
 
 const server = http.createServer(app);
 const port = process.env.PORT || 5000;
-const mongoUri = 'mongodb://mongo:nishanth@node-docdb.cluster-cx1sxzhnitmv.us-east-1.docdb.amazonaws.com:27017/chat_app_db?tls=true&tlsCAFile=global-bundle.pem&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false';
+const mongoUri = 'mongodb://USERNAME@PASSWORD@node-docdb.cluster-cx1sxzhnitmv.us-east-1.docdb.amazonaws.com:27017/chat_app_db?tls=true&tlsCAFile=global-bundle.pem&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false';
 
 mongoose
   .connect(mongoUri, { useNewUrlParser: true, useUnifiedTopology: true })
